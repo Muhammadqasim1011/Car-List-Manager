@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="xlsx.full.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<body onload="loadDataFromLocalStorage()">
+
+<div class="container">
+    <h2>Car List</h2>
+
+    <input type="text" id="addCarInput" placeholder="Enter car to add" onkeydown="handleKeyPress(event, 'add')">
+    <button onclick="addCar()">Add Car</button>
+
+    <input type="text" id="removeCarInput" placeholder="Enter index to remove" onkeydown="handleKeyPress(event, 'remove')">
+    <button onclick="removeCar()">Remove Car</button>
+
+</div>
+
+<div id="demo"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
