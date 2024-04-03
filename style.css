@@ -23,6 +23,12 @@ body {
 
 }
 
+@media (max-width:800px) {
+    .container{
+        width: 80%;
+    }
+}
+
 h2 {
     margin-top: 0;
     text-align: center;
